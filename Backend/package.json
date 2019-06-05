@@ -1,0 +1,33 @@
+{
+  "name": "apple-submission",
+  "version": "1.0.0",
+  "description": "apple submission",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel src --out-dir dist && node dist/index.js",
+    "dev": "nodemon --inspect --exec npm run babel-node -- ./index.js",
+    "babel-node": "babel-node --presets=env",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Ryan Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
